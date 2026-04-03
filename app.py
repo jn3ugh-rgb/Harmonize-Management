@@ -1,5 +1,12 @@
 import streamlit as st
 import pandas as pd
+import sys
+import os
+
+# 実行ファイルがあるディレクトリを検索パスに追加
+sys.path.append(os.path.dirname(__file__))
+
+# その後にインポートを書く
 from logic.data_handler import get_all_payment_plans, get_pl_summary
 from logic.report_gen import generate_report_text
 
