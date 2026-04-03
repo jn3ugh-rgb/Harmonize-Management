@@ -10,7 +10,7 @@ def get_spreadsheet():
     creds = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=scopes)
     client = gspread.authorize(creds)
     # スプレッドシートIDを指定して開く
-    return client.open_by_key("1lTRGsGvPTdaBRhs-vaEecpkdb3oh-IIel_Ai2Hfijkk")
+    return client.open_by_key("1x4iCtQUweoaPMxBe1snth-FOgPgrVR_KdftI73lzwQ8")
 
 # 2. 【最重要】分割入金データの正規化（UNION処理）
 def get_all_payment_plans():
